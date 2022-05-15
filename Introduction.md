@@ -5,9 +5,10 @@ title: Introduction
 
 <script src="https://hypothes.is/embed.js" async></script>
 
-**TOC**
 - toc
 {:toc}
+
+{: style="text-align: justify"}
 
 
 # What is Lorem Ipsum?
