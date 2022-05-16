@@ -6,9 +6,9 @@ highlighter:      rouge # changed from `pygments` as github says so
 permalink:        pretty
 
 # Setup
-title:            'Thomas Dissaux'
-tagline:          'MD-PhD student at The University of Liège'
-description:      'this is a description'
+title:            "T.DISSAUX"
+tagline:          "PhD candidate"
+description:      ''
 url:              http://tdissaux.github.io
 baseurl:          ''
 paginate:         5
@@ -21,11 +21,11 @@ author:
   #twitter: pesteadman
   #linkedin: pesteadman
   #goodreads: pesteadman
-  #orcid: http://orcid.org/0000-0002-5814-4977
-  #google_scholar: http://scholar.google.ca/citations?user=Xrn76pEAAAAJ
+  orcid: https://orcid.org/0000-0001-5407-3254
+  google_scholar: https://scholar.google.com/citations?user=VLFF3PIAAAAJ&hl=en
   #email_md5: 4a424eaac867c7c43ac960ad6650bfd1
   #emailalt_md5: 3a91811708b61787ecd9018c9becc99b
   #disqus_shortname: patricksteadman
   #google_analytics_id: UA-27104497-1
   #google_analytics_url: patricksteadman.ca
-  bio: MD-PhD student at The University of Liège
+  bio: "   PhD candidate at The University of Liège"

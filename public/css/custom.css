@@ -1,9 +1,9 @@
 .sidebar {
-	opacity: 0.8;
+	opacity: 1;
 }
 
 .sidebar:hover {
-	opacity: 1.0;
+	opacity: 1;
 }
 
 .sidebar-logo {
@@ -16,4 +16,177 @@
 	-webkit-border-radius: 50%;
 	width: 160px;
 	margin: 0 auto;
+}
+
+.page,
+.post { 
+	text-align: justify;
+	initial-letter: 2;
+}
+
+.page-title,
+.post-title {
+  margin-top: 0;
+  /* letter-spacing: 0.125rem; */
+  font-weight: bolder;
+  font-size: xx-large;
+  background-color: #313131;
+  color: #f9f9f9;
+  padding-left: 0.2rem;
+}
+
+::selection{
+	background-color: #F20544;
+	color: #f9f9f9;
+	font-weight: bold;
+}
+
+li {
+	/* font-family: "times","Helvetica", "PT Sans", Helvetica, Arial, sans-serif ; */
+	/* font-style: italic; */
+	/* background-color: #f9f9f9; */
+}
+
+/* li::first-letter{
+	font-weight: bold;
+} */
+
+html {
+	font-family: "Times New Roman", "PT Serif", Georgia, "Times New Roman", serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+	font-family: "Helvetica", "PT Sans", Helvetica, Arial, sans-serif;
+	font-weight: 400;
+	color: #313131;
+	letter-spacing: -.025rem;
+  }
+
+h1{
+	/* text-indent: 0.4rem; */
+	text-transform: uppercase;
+	font-weight: 500;
+  }
+
+h1::first-letter{
+	font-weight: bold;
+  }
+
+
+  .masthead-title {
+	margin-top: 0;
+	margin-bottom: 0;
+	color: #505050;
+  }
+  .masthead-title a {
+	font-weight: bold;
+	color: #f9f9f9;
+	letter-spacing: 0em;
+	background-color: #F20544;
+	padding-left: 0.1rem;
+	padding-right: 00.1rem;
+	/* font-variant: small-caps; */
+  }
+
+  .masthead-title small {
+	font-family: "Times New Roman", Arial, sans-serif;
+	font-size: 75%;
+	font-weight: 400;
+	color: #c0c0c0;
+	letter-spacing: 0;
+	text-indent: 1rem;
+	/* font-style: oblique; */
+  }
+
+  .masthead-title a:first-letter {
+	color: #F20544;
+  }
+
+  .sidebar {
+	position: fixed;
+	top: 4rem;
+	bottom: 0;
+	left: -14rem;
+	width: 10rem;
+	visibility: hidden;
+	overflow-y: auto;
+	font-style: italic;
+	font-family: "Times New Roman", Arial, sans-serif;
+	font-size: 0.9rem; /* 15px */
+	color: #313131;
+	background-color: #ffffff;
+	-webkit-transition: all .3s ease-in-out;
+			transition: all .3s ease-in-out;
+  }
+
+
+#sidebar-checkbox:checked ~ .sidebar-toggle {
+  -webkit-transform: translateX(0rem);
+      -ms-transform: translateX(0rem);
+          transform: translateX(0rem);
+}
+
+#markdown-toc {
+	font-weight: bold;
+	background-color: #f9f9f9;
+	font-family: "Helvetica", sans-serif;
+}
+
+/* #markdown-toc li{
+	list-style-type: decimal;
+} */
+
+#markdown-toc ul {
+	list-style-type: none;
+	counter-reset: item;
+	margin: 0;
+	padding: 0;
+  }
+  
+  #markdown-toc ul > li {
+	display: table;
+	counter-increment: item;
+	margin-bottom: 0.6em;
+  }
+  
+  #markdown-toc ul > li:before {
+	content: counters(item, ".") ". ";
+	display: table-cell;
+	padding-right: 0.6em;    
+  }
+  
+  #markdown-toc li ul > li {
+	margin: 0;
+  }
+  
+  #markdown-toc li ul > li:before {
+	content: counters(item, ".") " ";
+  }
+/* 
+The following serves the number append for headings
+*/
+
+body { counter-reset: h1counter;}
+h1 { counter-reset: h2counter; }
+h2 { counter-reset: h3counter; }
+h3 {}
+
+h1:before {
+    counter-increment: h1counter;
+    content: counter(h1counter) ".\0000a0";
+	font-weight: bold;
+	background-color: #313131;
+	color: #f9f9f9;
+}
+
+h2:before {
+    counter-increment: h2counter;
+    content: counter(h1counter) "." counter(h2counter) ".\0000a0";
+	font-weight: bold;
+}
+
+h3:before {
+    counter-increment: h3counter;
+    content: counter(h1counter) "." counter(h2counter) "." counter(h3counter) ".\0000a0";
+	font-weight: bold;
 }
