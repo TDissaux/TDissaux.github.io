@@ -3,8 +3,6 @@ layout: page
 title: INTRODUCTION
 ---
 
-<script src="https://hypothes.is/embed.js" async></script>
-
 - toc
 {:toc}
 
