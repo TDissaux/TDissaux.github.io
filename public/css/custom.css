@@ -89,9 +89,9 @@ h1::first-letter{
   }
 
   .masthead-title small {
-	font-family: "Times New Roman", Arial, sans-serif;
-	font-size: 75%;
-	font-weight: 400;
+	font-family: "Helvetica", "PT Sans", Helvetica, Arial, sans-serif;
+	font-size: 65%;
+	font-weight: 100;
 	color: #c0c0c0;
 	letter-spacing: 0;
 	text-indent: 1rem;
@@ -188,3 +188,11 @@ h3:before {
     content: counter(h1counter) "." counter(h2counter) "." counter(h3counter) ".\0000a0";
 	font-weight: bold;
 }
+p::first-letter {
+	font-weight: bold;
+	/* float: left;
+	font-size: 70px;
+	margin: 10px 10px 0px 0;
+	line-height: 0; */
+  }
+
